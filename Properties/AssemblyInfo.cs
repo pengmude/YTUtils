@@ -34,5 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.2.0.0")]
 [assembly: AssemblyFileVersion("1.2.0.0")]
-// 日志配置文件路径
-[assembly: log4net.Config.XmlConfigurator(Watch = true, ConfigFile = @"Config\log4net.config")]

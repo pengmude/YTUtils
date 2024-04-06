@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YTUtils {
+namespace YTUtils.Properties {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace YTUtils {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace YTUtils {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("YTUtils.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("YTUtils.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,24 +61,32 @@ namespace YTUtils {
         }
         
         /// <summary>
-        ///   查找类似 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-        ///&lt;configuration&gt;
-        ///  &lt;!-- 1. 添加log4net的节点声明配置代码--&gt;
-        ///  &lt;configSections&gt;
-        ///    &lt;section name=&quot;log4net&quot; type=&quot;log4net.Config.Log4NetConfigurationSectionHandler,log4net&quot; /&gt;
-        ///  &lt;/configSections&gt;
-        ///  &lt;log4net&gt;
-        ///    &lt;!-- Define some output appenders --&gt;
-        ///    &lt;appender name=&quot;rollingAppender&quot; type=&quot;log4net.Appender.RollingFileAppender&quot;&gt;
-        ///      &lt;file value=&quot;.\\Logs\\log4net.log&quot; /&gt;
-        ///      &lt;!--追加日志内容--&gt;
-        ///      &lt;appendToFile value=&quot;true&quot; /&gt;
-        ///      &lt;!--防止多线程时不能写Log,官方说线程非安全--&gt;
-        ///       [字符串的其余部分被截断]&quot;; 的本地化字符串。
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static string log4net {
+        internal static System.Drawing.Bitmap 图像源 {
             get {
-                return ResourceManager.GetString("log4net", resourceCulture);
+                object obj = ResourceManager.GetObject("图像源", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 快速匹配 {
+            get {
+                object obj = ResourceManager.GetObject("快速匹配", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 灰度匹配 {
+            get {
+                object obj = ResourceManager.GetObject("灰度匹配", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
